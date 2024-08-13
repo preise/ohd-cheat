@@ -11,5 +11,12 @@ public:
 public:
 	bool download_file(const std::string& url, const std::wstring& file_path);
 	bool get_dll();
+	std::string get_hash();
+
+	int get_use_count();
 };
 
+namespace json
+{
+	std::string get_value(const std::string& json, const std::string& key);
+}

@@ -1,5 +1,6 @@
 #include "pch.h"
 #include "memory.h"
+#include "md5.h"
 
 bool memory::init()
 {
@@ -132,4 +133,18 @@ void memory::delete_dll()
     {
         MessageBoxA(NULL, "The dll has been removed.", "Cleanup", MB_ICONINFORMATION);
     }
+}
+
+std::string memory::get_hash()
+{
+	std::ifstream file(dll_path, std::ios::binary);
+	if (!file.is_open())
+	{
+		return "Failed to open the file.";
+	}
+
+	std::string hash = md5(file);
+	file.close();
+
+	return hash;
 }

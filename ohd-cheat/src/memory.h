@@ -17,4 +17,5 @@ public:
 	bool init();
 
 	void delete_dll();
+	std::string get_hash();
 };

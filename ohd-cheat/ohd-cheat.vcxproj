@@ -19,6 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="src\md5.cpp" />
     <ClCompile Include="src\memory.cpp" />
     <ClCompile Include="src\network.cpp" />
     <ClCompile Include="src\main.cpp" />
@@ -28,6 +29,7 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\md5.h" />
     <ClInclude Include="src\memory.h" />
     <ClInclude Include="src\network.h" />
     <ClInclude Include="src\pch.h" />
@@ -171,6 +173,7 @@
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <UACExecutionLevel>RequireAdministrator</UACExecutionLevel>
+      <AdditionalDependencies>winhttp.lib;$(CoreLibraryDependencies);%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

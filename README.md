@@ -3,8 +3,7 @@
 
 https://github.com/user-attachments/assets/7888487b-923d-46d0-840c-e962a33f1281
 
-## Description
-Operation: Harsh Doorstop cheat, created in c++ with the bare minimum of features for an internal cheat. The source is just a simple injector that will get the latest dll from this [repo](https://github.com/preise/ohd-dll), so feel free to make your own injector and use my dll. If you got any interesting new features or want to "join the project" just hit me up on [discord](https://discordapp.com/users/876925308379488256).
+This is an internal cheat for the game Operation: Harsh Doorstop cheat, created in c++ with the bare minimum of features for an internal cheat. The source is just a simple injector that will get the latest dll from this [repo](https://github.com/preise/ohd-dll), so feel free to make your own injector and use my dll. If you got any interesting new features or want to "join the project" just hit me up on [discord](https://discordapp.com/users/876925308379488256).
 
 ## Features 
 - ESP
